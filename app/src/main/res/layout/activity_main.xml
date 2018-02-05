@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.iqquiz.MainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/root_linear"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        android:background="@color/lightGray"
+        >
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/scroll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+<!--
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:columnCount="2"
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aaaaaaaaaaaaaaaaa"
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bbbbbbbbbbbbbbbbbbbbbbb"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="B"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C"/>
+            </GridLayout>
+-->
+            <!--
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft=""
+                    />
+            </RelativeLayout>
+            -->
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+        <!--
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hands"
+            android:scaleType="centerInside"
+            android:tileMode="repeat" />
+
+        center 5 Center the image in the view, but perform no scaling.
+        centerCrop 6 Scale the image uniformly (maintain the image's aspect ratio) so both
+        dimensions (width and height) of the image will be equal to or larger than the corresponding
+        dimension of the view (minus padding). The image is then centered in the view.
+        centerInside 7 Scale the image uniformly (maintain the image's aspect ratio) so that both
+        dimensions (width and height) of the image will be equal to or less than the corresponding
+        dimension of the view (minus padding). The image is then centered in the view.
+        fitCenter 3 Scale the image using CENTER.
+        fitEnd 4 Scale the image using END.
+        fitStart 2 Scale the image using START.
+        fitXY 1 Scale the image using FILL.
+        matrix 0 Scale using the image matrix when drawing. See setImageMatrix(Matrix).
+        -->
+
+    </LinearLayout>
